@@ -23,6 +23,11 @@ body {
     word-wrap: break-word;
 }
 
+#public-info {
+    display: flex;
+    justify-content: space-between;
+}
+
 #clock {
     font-size: 4em;
     font-weight: 600;
