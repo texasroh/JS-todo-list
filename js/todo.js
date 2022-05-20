@@ -48,9 +48,9 @@
     todoForm.addEventListener('submit', handleTodoSubmit);
 
     const savedTodos = localStorage.getItem(TODO_KEY);
-    console.log(savedTodos);
     if (savedTodos) {
         const parseTodos = JSON.parse(savedTodos);
+        todos = parseTodos;
         parseTodos.forEach(paintTodo);
     }
 })();
